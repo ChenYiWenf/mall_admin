@@ -54,6 +54,13 @@ public class PmsProductCategoryController {
         }
     }
 
+    /**
+     * 商品分类查询
+     * @param parentId
+     * @param pageSize
+     * @param pageNum
+     * @return
+     */
     @ApiOperation("分页查询商品分类")
     @RequestMapping(value = "/list/{parentId}", method = RequestMethod.GET)
     @ResponseBody
@@ -64,6 +71,11 @@ public class PmsProductCategoryController {
         return CommonResult.success(CommonPage.restPage(productCategoryList));
     }
 
+    /**
+     * 编辑商品分类
+     * @param id
+     * @return
+     */
     @ApiOperation("根据id获取商品分类")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody

@@ -40,6 +40,11 @@ public class PmsProductController {
         }
     }
 
+    /**
+     * 编辑商品
+     * @param id
+     * @return
+     */
     @ApiOperation("根据商品id获取商品编辑信息")
     @RequestMapping(value = "/updateInfo/{id}", method = RequestMethod.GET)
     @ResponseBody
@@ -60,6 +65,13 @@ public class PmsProductController {
         }
     }
 
+    /**
+     * 分页查询商品
+     * @param productQueryParam
+     * @param pageSize
+     * @param pageNum
+     * @return
+     */
     @ApiOperation("查询商品")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody

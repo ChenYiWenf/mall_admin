@@ -55,6 +55,11 @@ public class UmsAdminController {
         return CommonResult.success(umsAdmin);
     }
 
+    /**
+     * 登录接口
+     * @param umsAdminLoginParam
+     * @return
+     */
     @ApiOperation(value = "登录以后返回token")
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody

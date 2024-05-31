@@ -95,6 +95,11 @@ public class UmsAdminServiceImpl implements UmsAdminService {
         return umsAdmin;
     }
 
+    /**
+     * @param username 用户名
+     * @param password 密码
+     * @return
+     */
     @Override
     public String login(String username, String password) {
         String token = null;
